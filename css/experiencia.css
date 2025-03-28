@@ -1,0 +1,156 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.ferramentas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ferramentas::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#ffde16, #8800ff);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.ferramenta-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.ferramentas-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.ferramentas-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+}
+
+.portfolio {
+  position: relative;
+  padding-left: 10px;
+  max-width: 300px; /* Ajuste conforme necessário */
+  margin: auto; /* Centraliza no meio da tela */
+}
+
+.portfolio::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#ffde16, #8800ff);
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.portfolio-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  grid-template-rows: repeat(2, auto); /* Duas linhas */
+  gap: 10px; /* Espaço entre os itens */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centraliza os itens */
+}
+
+.portfolio-links li {
+  display: flex;
+  justify-content: center;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Garante que ocupe a célula inteira */
+  height: 40px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .ferramentas {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tag {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px;
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.tag:hover {
+  background-color: #f0f0f0;
+}
